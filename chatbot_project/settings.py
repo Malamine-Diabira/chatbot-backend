@@ -1,3 +1,19 @@
+from decouple import config
+
+API_KEY = config('AIRTABLE_API_KEY')
+BASE_ID = config('AIRTABLE_BASE_ID')
+TABLE_NAME = config('AIRTABLE_TABLE_NAME')
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django_airtable.backends.airtable',
+        'API_KEY': API_KEY,
+        'BASE_ID': BASE_ID,
+        'TABLE_NAME': TABLE_NAME,
+    }
+}
+
+
 """
 Django settings for chatbot_project project.
 
