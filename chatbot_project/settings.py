@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-+q@d#)&9l-#4i3id+r@mz*y4$t!w@p$8lorcpaql6=6lgd3638
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['chatbot-backend-sepia.vercel.app']
 
 
 # Application definition
